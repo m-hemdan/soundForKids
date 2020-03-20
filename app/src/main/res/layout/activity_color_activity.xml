@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/letterback"
+    android:layout_height="match_parent"
+    tools:context=".color_activity">
+    <LinearLayout
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+       >
+    <LinearLayout
+
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+       >
+
+        <ImageView
+            android:id="@+id/greenbtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/green"></ImageView>
+        <ImageView
+            android:id="@+id/purbilbtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/purbile"></ImageView>
+        <ImageView
+            android:id="@+id/pinkbtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/pink"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/yellowbtn"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/yellow"></ImageView>
+  </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/redbtn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/red"></ImageView>
+            <ImageView
+                android:id="@+id/whitebtn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/white"></ImageView>
+
+            <ImageView
+                android:id="@+id/bluebtn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/blue"></ImageView>
+
+            <ImageView
+                android:id="@+id/gold"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/gold"></ImageView>
+
+        </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_marginTop="15dp"
+    >
+    <ImageView
+    android:id="@+id/blackbtn"
+    android:gravity="center_horizontal"
+    android:layout_weight="1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:src="@drawable/black"></ImageView>
+
+
+    <ImageView
+        android:id="@+id/orangebtn"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/orange"></ImageView>
+    <ImageView
+        android:id="@+id/gray"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/gray"></ImageView>
+    <ImageView
+        android:id="@+id/dark_blue"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/dark_blue"></ImageView>
+</LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
