@@ -3,11 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layoutDirection="ltr"
     android:background="@drawable/letterback"
     android:orientation="vertical"
-    android:padding="50dp"
+
     android:layout_height="match_parent"
     tools:context=".transportActivity">
+    <ImageView
+        android:onClick="goBack"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:layout_margin="10dp"
+        android:src="@drawable/arrow"></ImageView>
 <LinearLayout
     android:orientation="horizontal"
     android:layout_weight="1"
@@ -29,12 +37,12 @@
         android:src="@drawable/car"
         ></ImageView>
     <ImageView
-        android:id="@+id/train"
-        android:layout_weight="1"
+        android:id="@+id/boat"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:src="@drawable/train"
-        ></ImageView>
+        android:layout_weight="1"
+        android:src="@drawable/boat"></ImageView>
+
 </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -85,10 +93,11 @@
             android:src="@drawable/bicycle"
             ></ImageView>
         <ImageView
-            android:id="@+id/boat"
+            android:id="@+id/train"
+            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/boat"></ImageView>
+            android:src="@drawable/train"
+            ></ImageView>
     </LinearLayout>
 </LinearLayout>

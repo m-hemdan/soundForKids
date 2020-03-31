@@ -31,8 +31,10 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent=new Intent(MainActivity.this, welcomActivity.class);
                 startActivity(intent);
             }
-        }, 6000);
-//"android.resource://"+getPackageName()+"/"+R.raw.splash;
+        }, 3000);
+
     }
 
+
 }
+//ca-app-pub-8614841521637670~7696516567

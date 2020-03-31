@@ -6,14 +6,26 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/letterbackground"
+    android:layoutDirection="ltr"
     tools:context=".letter">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="vertical"
-        android:layout_weight="1"
+        android:layout_weight="1.5"
         >
+        <ImageView
+
+            android:onClick="goBack"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:layout_margin="10dp"
+            android:src="@drawable/arrow">
+
+        </ImageView>
             <LinearLayout
+
                 android:id="@+id/line_one"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -22,6 +34,7 @@
                 >
                 </LinearLayout>
             <LinearLayout
+
                 android:id="@+id/line_two"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -31,6 +44,7 @@
             </LinearLayout>
 
             <LinearLayout
+
                 android:id="@+id/line_three"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -53,7 +67,7 @@
         android:layout_width="0dp"
         android:layout_weight="1"
         android:layout_height="match_parent"
-
+        android:padding="10dp"
         > </ImageView>
     <TextView
         android:id="@+id/describtion"

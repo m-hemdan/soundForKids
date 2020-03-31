@@ -3,6 +3,7 @@ package com.example.learnsound;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -136,4 +137,8 @@ public class animal_Activity extends AppCompatActivity {
         }
     }
 
+    public void goBack(View view) {
+        Intent intent=new Intent(animal_Activity.this,chose.class);
+        startActivity(intent);
+    }
 }

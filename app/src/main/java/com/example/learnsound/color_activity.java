@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -60,7 +61,7 @@ public class color_activity extends AppCompatActivity {
         ImageView whiteImg=(ImageView)findViewById(R.id.whitebtn);
         ImageView yellowImg=(ImageView)findViewById(R.id.yellowbtn);
         ImageView darkblue=(ImageView)findViewById(R.id.dark_blue);
-        ImageView gold=(ImageView)findViewById(R.id.gold);
+        ImageView brown=(ImageView)findViewById(R.id.brown);
         ImageView gray=(ImageView)findViewById(R.id.gray);
 
         arrayListaudio.add(new audioSelect(R.raw.black,blackImg));
@@ -73,7 +74,7 @@ public class color_activity extends AppCompatActivity {
         arrayListaudio.add(new audioSelect(R.raw.white,whiteImg));
         arrayListaudio.add(new audioSelect(R.raw.yellow,yellowImg));
         arrayListaudio.add(new audioSelect(R.raw.blue,darkblue));
-        arrayListaudio.add(new audioSelect(R.raw.gold,gold));
+        arrayListaudio.add(new audioSelect(R.raw.brown,brown));
         arrayListaudio.add(new audioSelect(R.raw.gray,gray));
 
 
@@ -135,6 +136,10 @@ public class color_activity extends AppCompatActivity {
             md=null;
            audioManager.abandonAudioFocus(afAudioFocusChangeListener);
         }
+    }
+    public void goBack(View view) {
+        Intent intent=new Intent(color_activity.this,chose.class);
+        startActivity(intent);
     }
 
 }

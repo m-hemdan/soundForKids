@@ -4,15 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layoutDirection="ltr"
     android:orientation="vertical"
     android:background="@drawable/fruitbackground"
     tools:context=".fruitActivity">
-    <LinearLayout
+    <ImageView
+        android:onClick="goBack"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
         android:layout_margin="10dp"
+        android:src="@drawable/arrow">
+
+    </ImageView>
+    <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        android:layout_weight="1"
+        android:layout_weight="2"
         >
         <ImageView
             android:id="@+id/strawberry"
@@ -44,10 +54,10 @@
     </LinearLayout>
     <LinearLayout
 
-        android:layout_margin="10dp"
+
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         >
         <ImageView
             android:id="@+id/lemon"
@@ -79,10 +89,10 @@
     </LinearLayout>
     <LinearLayout
 
-        android:layout_margin="10dp"
+
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         >
         <ImageView
             android:id="@+id/peach"

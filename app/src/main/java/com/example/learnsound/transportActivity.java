@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.PropertyValuesHolder;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -110,5 +111,9 @@ AudioManager.OnAudioFocusChangeListener af=new AudioManager.OnAudioFocusChangeLi
             md=null;
             audioManager.abandonAudioFocus(af);
         }
+    }
+    public void goBack(View view) {
+        Intent intent=new Intent(transportActivity.this,chose.class);
+        startActivity(intent);
     }
 }

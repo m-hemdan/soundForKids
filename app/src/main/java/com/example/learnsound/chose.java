@@ -1,21 +1,19 @@
 package com.example.learnsound;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.app.Activity;
 import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
+import android.os.Build;
 import android.os.Bundle;
-import android.provider.ContactsContract;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Button;
 import android.widget.ImageView;
 
-import java.lang.reflect.Array;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.util.ArrayList;
 
 public class chose extends AppCompatActivity {
@@ -46,6 +44,7 @@ public class chose extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_chose);
         super.onCreate(savedInstanceState);
+
         am =(AudioManager) getSystemService(chose.AUDIO_SERVICE);
         ArrayList<ImageView>imageViews=new ArrayList<ImageView>();
         int result = am.requestAudioFocus(afChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
@@ -76,6 +75,7 @@ public class chose extends AppCompatActivity {
             ii.startAnimation(zoomOut);
             lenArrayList++;
         }
+
  }
    @Override
     protected void onResume()
@@ -146,5 +146,13 @@ public class chose extends AppCompatActivity {
     public void transportFun(View view) {
         Intent intent= new Intent(this,transportActivity.class);
         startActivity(intent);
+    }
+
+
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
+    public void closeApp(View view) {
+        Intent homeintent = new Intent(chose.this,welcomActivity.class);
+        startActivity(homeintent);
+        chose.this.finish();
     }
 }

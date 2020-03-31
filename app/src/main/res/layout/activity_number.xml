@@ -5,12 +5,23 @@
     android:background="@drawable/numberbackground"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layoutDirection="ltr"
     tools:context=".numberActivity"
     android:orientation="vertical">
+    <ImageView
+        android:onClick="goBack"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+
+        android:src="@drawable/arrow">
+
+    </ImageView>
     <LinearLayout
-        android:layout_marginTop="20dp"
+    android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
         android:orientation="horizontal"
         android:id="@+id/numberlayout"
 
@@ -19,22 +30,24 @@
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="30dp"
-        android:padding="20dp"
+        android:padding="5dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
         android:orientation="horizontal"
         android:id="@+id/number_container">
         <ImageView
             android:id="@+id/number"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
 
             ></ImageView>
         <LinearLayout
             android:id="@+id/number_relative_Layout"
             android:layout_width="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
+           android:gravity="center_vertical"
             android:orientation="horizontal"
             android:layout_height="wrap_content">
 

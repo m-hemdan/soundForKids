@@ -2,6 +2,7 @@ package com.example.learnsound;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.LinearGradient;
 import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
@@ -129,5 +130,9 @@ String[] textShow={"apple","banana","cat","dog","elephant","fish","grapes","hors
               md=null;
               audioManager.abandonAudioFocus(af);
         }
+    }
+    public void goBack(View view) {
+        Intent intent=new Intent(letter.this,chose.class);
+        startActivity(intent);
     }
 }

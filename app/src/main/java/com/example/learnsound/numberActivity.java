@@ -2,6 +2,7 @@ package com.example.learnsound;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -18,7 +19,7 @@ import java.util.ArrayList;
 public class numberActivity extends AppCompatActivity {
     MediaPlayer md;
     AudioManager audioManager;
-    LinearLayout numberLayout;
+    LinearLayout numberLayout,first,second;
     ImageView imageView1;
     //image of number//
     int[]arrayofImg={R.drawable.one,R.drawable.two,R.drawable.three,R.drawable.four,R.drawable.five,R.drawable.six,R.drawable.seven,R.drawable.eight,R.drawable.nine,R.drawable.ten};
@@ -56,6 +57,7 @@ public class numberActivity extends AppCompatActivity {
         setContentView(R.layout.activity_number);
         imageView1 =(ImageView)findViewById(R.id.number);
         numberLayout=(LinearLayout) findViewById(R.id.number_relative_Layout);
+
         audioManager=(AudioManager) getSystemService(numberActivity.AUDIO_SERVICE);
         //Linear layout container all number
         LinearLayout numberLinearLayout=(LinearLayout)findViewById(R.id.numberlayout);
@@ -118,7 +120,8 @@ public class numberActivity extends AppCompatActivity {
              ImageView numIm = new ImageView(this);
              numIm.setImageDrawable(im);
              numIm.setLayoutParams(params);
-             numberLayout.addView(numIm);
+
+            numberLayout.addView(numIm);
          }
 
 
@@ -132,5 +135,9 @@ public class numberActivity extends AppCompatActivity {
             audioManager.abandonAudioFocus(afAudioFocus);
         }
 
+    }
+    public void goBack(View view) {
+        Intent intent=new Intent(numberActivity.this,chose.class);
+        startActivity(intent);
     }
 }

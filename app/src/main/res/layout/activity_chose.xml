@@ -3,21 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-
+    android:layoutDirection="ltr"
     android:background="@drawable/popimage"
     android:layout_height="match_parent"
     tools:context=".chose">
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_alignParentRight="true"
+    android:layout_margin="10dp"
+    android:onClick="closeApp"
+        android:src="@drawable/close"></ImageView>
 <LinearLayout
+    android:layout_marginTop="15dp"
     android:orientation="vertical"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_centerVertical="true"
+android:layout_centerVertical="true"
     android:layout_centerHorizontal="true">
     <LinearLayout
 
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-         android:orientation="horizontal"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -93,4 +99,6 @@
 
     </LinearLayout>
 </LinearLayout>
+
+
 </RelativeLayout>

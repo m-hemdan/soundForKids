@@ -4,23 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/letterback"
+    android:layoutDirection="ltr"
+    android:background="@drawable/fruitbackground"
     android:layout_height="match_parent"
     tools:context=".color_activity">
     <LinearLayout
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="30dp"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_centerVertical="true"
+
         android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
        >
+        <ImageView
+            android:onClick="goBack"
+            android:layout_width="70dp"
+            android:layout_height="0dp"
+            android:layout_weight=".5"
+            android:layout_margin="10dp"
+            android:src="@drawable/arrow">
+
+        </ImageView>
     <LinearLayout
 
 
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="2"
         android:orientation="horizontal"
        >
 
@@ -54,7 +64,7 @@
         <LinearLayout
             android:layout_marginTop="15dp"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             >
@@ -65,11 +75,12 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:src="@drawable/red"></ImageView>
+
             <ImageView
                 android:id="@+id/whitebtn"
-                android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:src="@drawable/white"></ImageView>
 
             <ImageView
@@ -80,18 +91,18 @@
                 android:src="@drawable/blue"></ImageView>
 
             <ImageView
-                android:id="@+id/gold"
+                android:id="@+id/brown"
                 android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:src="@drawable/gold"></ImageView>
+                android:src="@drawable/brown"></ImageView>
 
         </LinearLayout>
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="0dp"
-    android:layout_weight="1"
+    android:layout_weight="2"
     android:layout_marginTop="15dp"
     >
     <ImageView
